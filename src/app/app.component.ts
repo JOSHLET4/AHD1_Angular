@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { GestionUsuarioComponent } from './gestion-usuario/gestion-usuario.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [GestionUsuarioComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'] // Corregido: styleUrls en vez de styleUrl
 })
-export class AppComponent {
-  title = 'AHD1';
-}
+export class AppComponent {}
